@@ -12,6 +12,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 400px 1fr;
+    height: 100%;
 }
 
 .topnav {
@@ -24,8 +25,9 @@ body {
 
 .content {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr .25fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
 }
 
 .project-container {
