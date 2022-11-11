@@ -10,6 +10,14 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 400px 1fr;
+}
+
+.topnav {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
 }
