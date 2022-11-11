@@ -22,6 +22,7 @@ body {
     height: 100%;
 }
 
+/*TOPNAV*/
 .topnav {
     grid-area: 1 / 2 / 2 / 3;
 }
@@ -35,7 +36,44 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
+    gap: 15px;
+    margin: 20px;
 }
+
+.logo-container > [class^="material"] {
+    font-size: 50px;
+    color: var(--sidebar-icon);
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--sidebar-icon);
+}
+
+.sidebar-content {
+    color: var(--sidebar-icon);
+    font-size: 1.5rem;
+    margin: 50px 35px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    align-content: center;
+    gap: 15px;
+}
+
+li > [class^="material"] {
+    font-size: 35px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+
+
 
 .content {
     display: grid;
