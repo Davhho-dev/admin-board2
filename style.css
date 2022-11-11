@@ -11,6 +11,8 @@ body {
 :root {
     --primary-color: #1992D3;
     --secondary-color: #FACC14;
+    --bg-color: #E2E8F0;
+    --shadow-color: #CDD2D8;
     --sidebar-icon: white;
     --account-icon: #FACC14;
 }
@@ -25,6 +27,90 @@ body {
 /*TOPNAV*/
 .topnav {
     grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px 10px var(--shadow-color);
+    margin-bottom: 10px;
+}
+
+.top-container,
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container,
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.search-container > [class^="material"] {
+    font-size: 35px;
+}
+
+input {
+    background-color: var(--bg-color);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
+    width: 700px;
+    height: 35px;
+}
+
+.account-container,
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.account-container > [class^="material"] {
+    font-size: 35px;
+}
+
+.account-container img {
+    background-color: var(--account-icon);
+    height: 60px;
+    border-radius: 25%;
+}
+
+.user-name {
+    font-size: 1.5rem;
+}
+
+.welcome-container img {
+    background-color: var(--account-icon);
+    height: 75px;
+    border-radius: 25%;
+}
+
+.welcome-message > p:first-child {
+    font-size: 1rem;
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: var(--primary-color); 
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    width: 100px;
+    height: 40px;
 }
 
 /* SIDEBAR */
@@ -76,6 +162,8 @@ li {
 
 
 .content {
+    background-color: var(--bg-color);
+
     display: grid;
     grid-template-columns: 1fr .25fr;
     grid-template-rows: 1fr 1fr;
