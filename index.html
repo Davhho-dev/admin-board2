@@ -4,24 +4,25 @@
         <meta charset="UTF-8">
         <title>Admin Dashboard Remake</title>
         <link rel="stylesheet" href="style.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
             <div class="topnav">
                 <div class="top-container">
                     <div class="search-container">
-                        <span class="search-icon"></span>
+                        <span class="material-symbols-outlined">search</span>
                         <input type="text" placeholder="Search">
                     </div>
                     <div class="account-container">
-                        <span class="alert-icon"></span>
-                        <span class="account-photo"></span>
+                        <span class="material-symbols-outlined">notifications_active</span>
+                        <img class="account-photo" src="./icons/face-man-profile.png" alt="account photo">
                         <h3 class="user-name">Morgan Oakley</h3>
                     </div>
                 </div>
                 <div class="bottom-container">
                     <div class="welcome-container">
-                        <span class="account-photo"></span>
+                        <img class="account-photo" src="./icons/face-man-profile.png" alt="account photo">
                         <div class="welcome-message">
                             <p>Hi there,</p>
                             <p>Morgan Oakley (@morgan)</p>
@@ -36,21 +37,48 @@
             </div>
             <nav class="sidebar">
                 <div class="logo-container">
-                    <span class="logo"></span>
+                    <span class="material-symbols-outlined">dashboard</span>
                     <h1>Dashboard</h1>
                 </div>
                 <ul class="sidebar-content">
-                    <li><span class="home-icon"></span>Home</li>
-                    <li><span class="profile-icon"></span>Profile</li>
-                    <li><span class="message-icon"></span>Message</li>
-                    <li><span class="history-icon"></span>History</li>
-                    <li><span class="task-icon"></span>Tasks</li>
-                    <li><span class="community-icon"></span>Communities</li>
+                    <li>
+                        <span class="material-symbols-outlined">home</span>
+                        Home
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">account_box</span>
+                        Profile
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">comment</span>
+                        Message
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">history</span>
+                        History
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">task</span>
+                        Tasks
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">groups</span>
+                        Communities
+                    </li>
                 </ul>
                 <ul class="sidebar-content">
-                    <li><span class="setting-icon"></span>Settings</li>
-                    <li><span class="support-icon"></span>Support</li>
-                    <li><span class="privacy-icon"></span>Privacy</li>
+                    <li>
+                        <span class="material-symbols-outlined">settings</span>
+                        Settings
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">help_center</span>
+                        Support
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">verified_user</span>
+                        Privacy
+                    </li>
                 </ul>
             </nav>
             <main class="content">
@@ -76,9 +104,9 @@
                                 <p class="card-body">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
                             </div>
                             <div class="action-icon">
-                                <span class="star-icon"></span>
-                                <span class="eye-icon"></span>
-                                <span class="fork-icon"></span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">visibility</span>
+                                <span class="material-symbols-outlined">account_tree</span>
                             </div>
                         </div>
                     </div>
@@ -89,9 +117,9 @@
                                 <p class="card-body">In hac habitasse platea dictumst. vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
                             </div>
                             <div class="action-icon">
-                                <span class="star-icon"></span>
-                                <span class="eye-icon"></span>
-                                <span class="fork-icon"></span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">visibility</span>
+                                <span class="material-symbols-outlined">account_tree</span>
                             </div>
                         </div>
                     </div>
@@ -102,9 +130,9 @@
                                 <p class="card-body">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
                             </div>
                             <div class="action-icon">
-                                <span class="star-icon"></span>
-                                <span class="eye-icon"></span>
-                                <span class="fork-icon"></span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">visibility</span>
+                                <span class="material-symbols-outlined">account_tree</span>
                             </div>
                         </div>
                     </div>
@@ -115,9 +143,9 @@
                                 <p class="card-body">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra, hendrerit felis. Aliquam sed malesuada eros.</p>
                             </div>
                             <div class="action-icon">
-                                <span class="star-icon"></span>
-                                <span class="eye-icon"></span>
-                                <span class="fork-icon"></span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">visibility</span>
+                                <span class="material-symbols-outlined">account_tree</span>
                             </div>
                         </div>
                     </div>
@@ -128,9 +156,9 @@
                                 <p class="card-body">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
                             </div>
                             <div class="action-icon">
-                                <span class="star-icon"></span>
-                                <span class="eye-icon"></span>
-                                <span class="fork-icon"></span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">visibility</span>
+                                <span class="material-symbols-outlined">account_tree</span>
                             </div>
                         </div>
                     </div>
@@ -156,28 +184,28 @@
                     <h3>Trending</h3>
                     <ul class="trending-content">
                         <li>
-                            <span class="account-photo"></span>
+                            <img class="account-photo" src="./icons/dog.png" alt="dog icon">
                             <div class="account-info">
                                 <p class="account-tag">@tegan</p>
                                 <p class="account-name">World Peace Builder</p>
                             </div>
                         </li>
                         <li>
-                            <span class="account-photo"></span>
+                            <img class="account-photo" src="./icons/cat.png" alt="cat icon">
                             <div class="account-info">
                                 <p class="account-tag">@morgan</p>
                                 <p class="account-name">Super Cool Project</p>
                             </div>
                         </li>
                         <li>
-                            <span class="account-photo"></span>
+                            <img class="account-photo" src="./icons/spider.png" alt="spider icon">
                             <div class="account-info">
                                 <p class="account-tag">@kendall</p>
                                 <p class="account-name">Life Changing App</p>
                             </div>
                         </li>
                         <li>
-                            <span class="account-photo"></span>
+                            <img class="account-photo" src="./icons/penguin.png" alt="penguin icon">
                             <div class="account-info">
                                 <p class="account-tag">@alex</p>
                                 <p class="account-name">No Traffic Maker</p>
