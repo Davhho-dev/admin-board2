@@ -8,6 +8,11 @@ body {
     height: 100vh;
 }
 
+:root {
+    --primary-color: #1992D3;
+    --secondary-color: #FACC14;
+}
+
 .container {
     display: grid;
     grid-template-rows: auto 1fr;
