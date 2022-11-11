@@ -162,8 +162,8 @@ li {
     background-color: var(--bg-color);
 
     display: grid;
-    grid-template-columns: 1fr .25fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3.5fr 1fr;
+    grid-template-rows: min-content 1fr;
     gap: 25px;
 }
 
@@ -171,9 +171,6 @@ li {
 .project-container {
     grid-column: 1 / 2;
     padding: 30px;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 h3 {
@@ -186,9 +183,23 @@ h3 {
 }
 
 .cards {
-    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 25px;
+    margin-top: 25px;
 }
 
+.card-content {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 10px 10px var(--shadow-color);
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+}
 
 .announcement-container, 
 .trending-container {
