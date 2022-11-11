@@ -8,3 +8,8 @@ body {
     height: 100vh;
 }
 
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr auto;
+}
