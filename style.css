@@ -152,6 +152,10 @@ li > [class^="material"] {
     font-size: 35px;
 }
 
+a > [class^="material"] {
+    font-size: 35px;
+}
+
 .sidebar-content > li {
     display: flex;
     align-items: center;
@@ -159,6 +163,17 @@ li > [class^="material"] {
     font-weight: bold;
 }
 
+a:link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--sidebar-icon);
+}
+
+a:visited {
+    color: white;
+}
 
 /* ------------- PROJECT ------------- */
 .content {
