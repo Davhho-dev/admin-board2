@@ -127,18 +127,19 @@ button {
     margin: 20px;
 }
 
-.logo-container > [class^="material"] {
+.logo-container > [class^="material"] { /*Select child class with name "material"*/
     font-size: 50px;
     color: var(--sidebar-icon);
 }
 
 h1 {
     font-size: 2rem;
-    color: var(--sidebar-icon);
+    color: white;
 }
 
 .sidebar-content {
     color: var(--sidebar-icon);
+    list-style-type: none;
     font-size: 1.5rem;
     margin: 50px 35px;
 
@@ -148,25 +149,15 @@ h1 {
     gap: 15px;
 }
 
-li > [class^="material"] {
-    font-size: 35px;
-}
-
 a > [class^="material"] {
     font-size: 35px;
-}
-
-.sidebar-content > li {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-weight: bold;
 }
 
 a:link {
     display: flex;
     align-items: center;
     gap: 15px;
+    font-weight: bold;
     text-decoration: none;
     color: var(--sidebar-icon);
 }
