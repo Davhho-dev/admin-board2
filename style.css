@@ -14,7 +14,6 @@ body {
     --bg-color: #E2E8F0;
     --shadow-color: #CDD2D8;
     --sidebar-icon: white;
-    --account-icon: #FACC14;
     --card-font-color: #636363;
 }
 
@@ -77,9 +76,8 @@ input {
 }
 
 .account-container img {
-    background-color: var(--account-icon);
     height: 60px;
-    width:60px;
+    width: 60px;
     border-radius: 25%;
 }
 
@@ -88,13 +86,12 @@ input {
 }
 
 .welcome-container img {
-    background-color: var(--account-icon);
     height: 75px;
     width: 75px;
     border-radius: 25%;
 }
 
-.welcome-message > p:first-child {
+.welcome-message > p:first-child { /*Setting Hi there, smaller*/
     font-size: 1rem;
 }
 
@@ -241,12 +238,13 @@ h3 {
 .trending-content {
     display: grid;
     grid-template-rows: auto;
+    gap: 25px;
+    
     background-color: white;
     border-radius: 10px;
     width: 75%;
     margin-top: 25px;
     padding: 15px;
-    gap: 25px;
     box-shadow: 5px 10px 10px var(--shadow-color);
 }
 
@@ -281,24 +279,5 @@ h5,
 .trending-content > li > img {
     height: 55px;
     width: 55px;
-}
-
-.trending-content > li:nth-child(1) > img {
-    background-color: #DFF1FE;
-    border-radius: 25%;
-}
-
-.trending-content > li:nth-child(2) > img {
-    background-color: var(--account-icon);
-    border-radius: 25%;
-}
-
-.trending-content > li:nth-child(3) > img {
-    background-color: #A3A3A3;
-    border-radius: 25%;
-}
-
-.trending-content > li:last-child > img {
-    background-color: #FCA4AF;
     border-radius: 25%;
 }
