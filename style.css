@@ -141,7 +141,8 @@ h1 {
     color: var(--sidebar-icon);
     list-style-type: none;
     font-size: 1.5rem;
-    margin: 50px 35px;
+    padding-top: 50px;
+    /* padding: 50px 35px; */
 
     display: grid;
     grid-template-rows: 1fr;
@@ -159,11 +160,19 @@ a:link {
     gap: 15px;
     font-weight: bold;
     text-decoration: none;
-    color: var(--sidebar-icon);
+    padding-left: 30px;
+    border-left: 5px solid transparent; /*Prevents the link from shifting when hovering*/
+    opacity: 0.75;  /*Sets color to be lighter than logo*/
 }
 
 a:visited {
     color: white;
+}
+
+.sidebar-content li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--secondary-color);
+    opacity: 1; 
 }
 
 /* ------------- PROJECT ------------- */
